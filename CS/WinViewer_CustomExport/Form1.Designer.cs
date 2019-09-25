@@ -36,13 +36,13 @@
             // dashboardViewer1
             // 
             this.dashboardViewer1.AllowPrintDashboardItems = true;
-            this.dashboardViewer1.CustomDBSchemaProviderEx = null;
+            this.dashboardViewer1.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.dashboardViewer1.Appearance.Options.UseBackColor = true;
             this.dashboardViewer1.DashboardSource = typeof(WinViewer_CustomExport.Dashboard1);
             this.dashboardViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboardViewer1.Location = new System.Drawing.Point(0, 0);
             this.dashboardViewer1.Name = "dashboardViewer1";
-            this.dashboardViewer1.PrintingOptions.DocumentContentOptions.FilterState = DevExpress.DashboardWin.DashboardPrintingFilterState.SeparatePage;
-            this.dashboardViewer1.Size = new System.Drawing.Size(961, 513);
+            this.dashboardViewer1.Size = new System.Drawing.Size(961, 349);
             this.dashboardViewer1.TabIndex = 2;
             this.dashboardViewer1.CustomExport += new DevExpress.DashboardCommon.CustomExportEventHandler(this.dashboardViewer1_CustomExport);
             // 
@@ -50,7 +50,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 513);
+            this.ClientSize = new System.Drawing.Size(961, 349);
             this.Controls.Add(this.dashboardViewer1);
             this.Name = "Form1";
             this.Text = "Dashboard Viewer";

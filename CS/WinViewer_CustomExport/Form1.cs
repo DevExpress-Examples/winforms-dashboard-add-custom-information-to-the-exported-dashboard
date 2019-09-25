@@ -14,6 +14,7 @@ namespace WinViewer_CustomExport
 
         private void dashboardViewer1_CustomExport(object sender, CustomExportEventArgs e)
         {
+
             XtraReport report = e.Report as XtraReport;
             PageHeaderBand headerBand = new PageHeaderBand();
             report.Bands.Add(headerBand);
@@ -25,7 +26,7 @@ namespace WinViewer_CustomExport
             headerBand.Controls.Add(icon);
 
             XRLabel customHeader = new XRLabel();
-            customHeader.Text = "Additioanl Header Text";
+            customHeader.Text = "TEST TEST TEST";
             customHeader.LeftF = 300;
             customHeader.WidthF = 300;
             headerBand.Controls.Add(customHeader);
@@ -33,17 +34,9 @@ namespace WinViewer_CustomExport
             XRPageInfo dateInfo = new XRPageInfo();
             dateInfo.PageInfo = PageInfo.DateTime;
             dateInfo.Format = "Created at {0:h:mm tt dd MMMM yyyy}";
-            dateInfo.TopF = 100;
+            dateInfo.TopF = 50;
             dateInfo.WidthF = 200;
             headerBand.Controls.Add(dateInfo);
-
-            XRPageInfo userInfo = new XRPageInfo();
-            userInfo.PageInfo = PageInfo.UserName;
-            userInfo.Format = "Current User: {0}";
-            userInfo.TopF = 100;
-            userInfo.LeftF = 250;
-            userInfo.WidthF = 200;
-            headerBand.Controls.Add(userInfo);
 
             PageFooterBand footerBand = new PageFooterBand();
             report.Bands.Add(footerBand);
