@@ -12,8 +12,16 @@ Handle the [CustomExport](https://docs.devexpress.com/Dashboard/DevExpress.Dashb
 
 ![screenshot](/images/screenshot.png)
 
-See also:
+
+## Documentation
+
+* [Printing and Exporting](https://docs.devexpress.com/Dashboard/15181)
+* [Custom Export](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.CustomExport)
+
+## More Examples
 * [Web Dashboard - How to add custom information to the exported dashboard](https://github.com/DevExpress-Examples/web-dashboard-how-to-add-custom-information-to-the-exported-dashboard-t466585)
+
+
 
 
 
