@@ -19,6 +19,7 @@ Handle the [CustomExport](https://docs.devexpress.com/Dashboard/DevExpress.Dashb
 * [Custom Export](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.CustomExport)
 
 ## More Examples
+* [Dashboard for WinForms - How to add custom information to the exported Excel document](https://github.com/DevExpress-Examples/WinForms-DashboardDesigner-CustomizeExportDocument-example)
 * [Web Dashboard - How to add custom information to the exported dashboard](https://github.com/DevExpress-Examples/web-dashboard-how-to-add-custom-information-to-the-exported-dashboard-t466585)
 
 
