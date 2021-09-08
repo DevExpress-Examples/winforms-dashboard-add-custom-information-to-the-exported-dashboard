@@ -8,7 +8,7 @@
 
 * [Form1.cs](./CS/WinViewer_CustomExport/Form1.cs) (VB: [Form1.vb](./VB/WinViewer_CustomExport/Form1.vb))
 <!-- default file list end -->
-# How to Display Custom Information in the Exported Dashboard
+# Dashboard for WinForms - How to Display Custom Information in the Exported Dashboard
 
 
 This example demonstrates how to add a custom header and footer to the exported dashboard.
@@ -26,6 +26,8 @@ Handle the [CustomExport](https://docs.devexpress.com/Dashboard/DevExpress.Dashb
 ## More Examples
 * [Dashboard for WinForms - How to add custom information to the exported Excel document](https://github.com/DevExpress-Examples/WinForms-DashboardDesigner-CustomizeExportDocument-example)
 * [Web Dashboard - How to add custom information to the exported dashboard](https://github.com/DevExpress-Examples/web-dashboard-how-to-add-custom-information-to-the-exported-dashboard-t466585)
+* [Dashboard for WinForms - How to Export Customized Pie Dashboard Item](https://github.com/DevExpress-Examples/WinForms-Dashboard-How-to-export-customized-Pie-Dashboard-Item)
+* [Dashboard for WinForms - How to Handle the BeforeExportDocument Event to Hide the Dashboard Filter Items](https://github.com/DevExpress-Examples/winforms-dashboard-beforeexportdocument-event)
 
 
 
