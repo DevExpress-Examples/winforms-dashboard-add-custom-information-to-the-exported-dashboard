@@ -3,18 +3,12 @@ using DevExpress.DashboardCommon;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraReports.UI;
 
-namespace WinViewer_CustomExport
-{
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
+namespace WinViewer_CustomExport {
+    public partial class Form1 : Form {
+        public Form1() {
             InitializeComponent();
         }
-
-        private void dashboardViewer1_CustomExport(object sender, CustomExportEventArgs e)
-        {
-
+        private void dashboardViewer1_CustomExport(object sender, CustomExportEventArgs e) {
             XtraReport report = e.Report as XtraReport;
             PageHeaderBand headerBand = new PageHeaderBand();
             report.Bands.Add(headerBand);
