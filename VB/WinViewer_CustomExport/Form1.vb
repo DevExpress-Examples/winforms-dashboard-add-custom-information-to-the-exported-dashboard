@@ -1,17 +1,13 @@
 ﻿Imports DevExpress.DashboardCommon
 Imports DevExpress.XtraReports.UI
 
-
 Namespace WinViewer_CustomExport
     Partial Public Class Form1
         Inherits Form
-
         Public Sub New()
             InitializeComponent()
         End Sub
-
         Private Sub dashboardViewer1_CustomExport(ByVal sender As Object, ByVal e As CustomExportEventArgs) Handles dashboardViewer1.CustomExport
-
             Dim report As XtraReport = e.Report
             Dim headerBand As New PageHeaderBand()
             report.Bands.Add(headerBand)
