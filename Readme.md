@@ -12,7 +12,7 @@ Handle the [CustomExport](https://docs.devexpress.com/Dashboard/DevExpress.Dashb
 
 ![screenshot](/images/screenshot.png)
 
-## Files to look at:
+## Files to Review:
 
 * [Form1.cs](./CS/WinViewer_CustomExport/Form1.cs) (VB: [Form1.vb](./VB/WinViewer_CustomExport/Form1.vb))
 
