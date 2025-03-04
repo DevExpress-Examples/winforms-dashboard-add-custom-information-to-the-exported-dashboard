@@ -9,34 +9,35 @@ namespace WinViewer_CustomExport {
             InitializeComponent();
         }
         private void dashboardViewer1_CustomExport(object sender, CustomExportEventArgs e) {
-            XtraReport report = e.Report as XtraReport;
-            PageHeaderBand headerBand = new PageHeaderBand();
-            report.Bands.Add(headerBand);
+            var report = e.Report as XtraReport;
+            var topMarginBand = report.Bands[BandKind.TopMargin];
 
-            XRPictureBox icon = new XRPictureBox();
+            var icon = new XRPictureBox();
+            topMarginBand.Controls.Add(icon);
             icon.Image = Properties.Resources.dxLogo;
             icon.HeightF = 50;
             icon.WidthF = 300;
-            headerBand.Controls.Add(icon);
 
-            XRLabel customHeader = new XRLabel();
+            var customHeader = new XRLabel();
+            topMarginBand.Controls.Add(customHeader);
             customHeader.Text = "TEST TEST TEST";
             customHeader.LeftF = 300;
             customHeader.WidthF = 300;
-            headerBand.Controls.Add(customHeader);
 
-            XRPageInfo dateInfo = new XRPageInfo();
+            var dateInfo = new XRPageInfo();
+            topMarginBand.Controls.Add(dateInfo);
             dateInfo.PageInfo = PageInfo.DateTime;
             dateInfo.Format = "Created at {0:h:mm tt dd MMMM yyyy}";
-            dateInfo.TopF = 50;
             dateInfo.WidthF = 200;
-            headerBand.Controls.Add(dateInfo);
+            dateInfo.LeftF = report.PageSize.Width - report.Margins.Left - report.Margins.Right - dateInfo.WidthF;
+            dateInfo.TopF = dateInfo.Band.HeightF - dateInfo.HeightF;
 
-            PageFooterBand footerBand = new PageFooterBand();
+            var footerBand = new PageFooterBand();
             report.Bands.Add(footerBand);
-            XRPageInfo pageInfo = new XRPageInfo();
-            pageInfo.Format = "Page {0} of {1}";
+            footerBand.HeightF = 30;
+            var pageInfo = new XRPageInfo();
             footerBand.Controls.Add(pageInfo);
+            pageInfo.Format = "Page {0} of {1}";
         }
     }
 }
